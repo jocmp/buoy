@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "basil"
 include(":app")
 include(":readeckclient")
+include(":basil")

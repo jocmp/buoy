@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "basil"
+rootProject.name = "buoy"
 include(":app")
 include(":readeckclient")
-include(":basil")
+include(":buoy")

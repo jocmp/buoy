@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.jocmp.basilapp"
+    namespace = "com.jocmp.buoyapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.jocmp.basilapp"
+        applicationId = "com.jocmp.buoyapp"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
@@ -62,7 +62,7 @@ dependencies {
     implementation(libs.okhttp.client)
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.core)
-    implementation(project(":basil"))
+    implementation(project(":buoy"))
     testImplementation(libs.tests.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,4 +1,4 @@
-package com.jocmp.buoyapp
+package com.jocmp.buoy
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.jocmp.buoyapp", appContext.packageName)
+        assertEquals("com.jocmp.buoy.test", appContext.packageName)
     }
 }

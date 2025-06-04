@@ -8,6 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.jocmp.buoyapp.ui.bookmarks.BookmarkScreen
 import com.jocmp.buoyapp.ui.login.LoginScreen
 import com.jocmp.buoyapp.ui.theme.BuoyTheme
 
@@ -26,8 +27,21 @@ fun App(
                 navController = navController,
                 startDestination = startDestination
             ) {
+                composable<Route.Articles> {
+                    BookmarkScreen()
+                }
                 composable<Route.Login> {
-                    LoginScreen()
+                    LoginScreen(
+                        onSuccess = {
+                            navController.navigate(Route.Articles) {
+                                launchSingleTop = true
+
+                                popUpTo(Route.Login) {
+                                    inclusive = true
+                                }
+                            }
+                        }
+                    )
                 }
             }
         }

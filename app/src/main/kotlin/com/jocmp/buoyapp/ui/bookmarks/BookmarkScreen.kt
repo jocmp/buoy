@@ -1,9 +1,9 @@
-package com.jocmp.buoyapp.ui.login
+package com.jocmp.buoyapp.ui.bookmarks
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 
 @Composable
-fun LoginScreen() {
-    Text("hello")
+fun BookmarkScreen() {
+    Text("hello world")
 }

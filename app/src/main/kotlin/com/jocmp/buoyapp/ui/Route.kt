@@ -9,6 +9,6 @@ sealed class Route {
     @Serializable
     data object Settings : Route()
 
-//    @Serializable
-//    data object Articles : Route()
+    @Serializable
+    data object Articles : Route()
 }

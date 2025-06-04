@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
         return if (accountID.isBlank()) {
             return Route.Login
         } else {
-            Route.Settings
+            Route.Articles
         }
     }
 }

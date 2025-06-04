@@ -2,12 +2,12 @@ package com.jocmp.buoy.readeck
 
 import com.jocmp.readeckclient.Readeck
 
-data class ReadeckCredentials(
+data class Credentials(
     val username: String,
     val secret: String,
     val url: String,
 ) {
-    suspend fun verify(): Result<ReadeckCredentials> {
+    suspend fun verify(): Result<Credentials> {
         try {
             val response = Readeck.verifyCredentials(
                 username = username,

@@ -1,24 +1,25 @@
 package com.jocmp.buoyapp
 
+import com.jocmp.buoyapp.ui.login.loginModule
 import org.koin.core.KoinApplication
 import org.koin.core.context.loadKoinModules
 
 fun KoinApplication.setupCommonModules() {
-    modules(common)
+    modules(common, loginModule)
 }
 
 fun loadAccountModules() {
-//    loadKoinModules(accountModules)
+    loadKoinModules(accountModules)
 }
 
 //fun unloadAccountModules() {
 //    unloadKoinModules(accountModules)
 //}
 
-//private val accountModules = listOf(
-//    accountModule,
+private val accountModules = listOf(
+    accountModule,
 //    settingsModule,
 //    articlesModule,
 //    refresherModule,
 //    syncModule,
-//)
+)

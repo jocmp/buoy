@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(project(":readeckclient"))
     testImplementation(libs.tests.junit)
+    testImplementation(kotlin("test"))
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

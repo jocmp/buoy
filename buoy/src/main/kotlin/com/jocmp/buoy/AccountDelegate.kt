@@ -1,3 +1,5 @@
 package com.jocmp.buoy
 
-interface AccountDelegate
+interface AccountDelegate {
+
+}

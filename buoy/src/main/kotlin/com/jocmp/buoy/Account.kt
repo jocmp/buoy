@@ -10,4 +10,6 @@ data class Account(
     val cacheDirectory: URI,
     val preferences: AccountPreferences,
     val delegate: AccountDelegate = ReadeckDelegate(cacheDirectory, preferences)
-)
+) {
+    val username = preferences.username
+}

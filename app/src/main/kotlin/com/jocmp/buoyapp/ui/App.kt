@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.jocmp.buoyapp.ui.bookmarks.BookmarkScreen
+import com.jocmp.buoyapp.ui.bookmarks.BookmarksScreen
 import com.jocmp.buoyapp.ui.login.LoginScreen
 import com.jocmp.buoyapp.ui.theme.BuoyTheme
 
@@ -28,7 +28,7 @@ fun App(
                 startDestination = startDestination
             ) {
                 composable<Route.Articles> {
-                    BookmarkScreen()
+                    BookmarksScreen()
                 }
                 composable<Route.Login> {
                     LoginScreen(

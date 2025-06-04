@@ -1,5 +1,6 @@
 package com.jocmp.buoyapp
 
+import com.jocmp.buoyapp.ui.bookmarks.bookmarksModule
 import com.jocmp.buoyapp.ui.login.loginModule
 import org.koin.core.KoinApplication
 import org.koin.core.context.loadKoinModules
@@ -18,8 +19,8 @@ fun loadAccountModules() {
 
 private val accountModules = listOf(
     accountModule,
+    bookmarksModule,
 //    settingsModule,
-//    articlesModule,
 //    refresherModule,
 //    syncModule,
 )
